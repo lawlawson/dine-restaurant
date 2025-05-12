@@ -1,3 +1,13 @@
+@layer colors {
+  :root {
+    --clr-brown: #9e7f66;
+    --clr-black: #111111;
+    --clr-gray-100: #17192b;
+    --clr-gray-200: #242b37;
+    --clr-gray-300: #5c6779;
+  }
+}
+
 @layer global {
   *,
   *::before,
