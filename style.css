@@ -2,9 +2,12 @@
   :root {
     --clr-brown: #9e7f66;
     --clr-black: #111111;
+    --clr-white: #ffffff;
     --clr-gray-100: #17192b;
-    --clr-gray-200: #242b37;
-    --clr-gray-300: #5c6779;
+    --clr-gray-300: #242b37;
+    --clr-gray-500: #5c6779;
+    --clr-background-dark: var(--clr-black);
+    --clr-background-light: var(--clr-white);
   }
 }
 
@@ -17,6 +20,8 @@
 
   body {
     margin: 0;
+    background-color: var(--clr-background-dark);
+    color: var(--clr-background-light);
   }
 
   h1,
