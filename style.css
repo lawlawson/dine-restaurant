@@ -46,6 +46,30 @@
   }
 }
 
+@layer typography {
+  :root {
+    --fs-80: calc(80 / 16 * 1rem);
+    --fs-48: calc(48 / 16 * 1rem);
+    --fs-32: calc(32 / 16 * 1rem);
+    --font-size-h1: var(--fs-32);
+
+    @media (width >= calc(700 / 16 * 1rem)) {
+      --font-size-h1: var(--fs-48);
+    }
+
+    @media (width >= calc(1100 / 16 * 1rem)) {
+      --font-size-h1: var(--fs-80);
+    }
+  }
+
+  h1 {
+    font-size: var(--font-size-h1);
+    font-weight: 300;
+    letter-spacing: 0.0125em;
+    line-height: 1;
+  }
+}
+
 @layer global {
   *,
   *::before,
@@ -57,6 +81,7 @@
     margin: 0;
     background-color: var(--clr-background-dark);
     color: var(--clr-background-light);
+    font-family: 'League Spartan', Arial, Helvetica, sans-serif;
   }
 
   h1,
